@@ -1,6 +1,6 @@
 {
   "name": "@yukiakai/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight static logger for Node.js using native `console.log` but with log levels and `debug`-style control.",
   "type": "module",
   "main": "./dist/index.js",
@@ -20,7 +20,14 @@
     "dist/*",
     "CHANGELOG.md"
   ],
-  "keywords": ["logger", "console", "debug", "zero-dep", "typescript", "nodejs"],
+  "keywords": [
+    "logger",
+    "console",
+    "debug",
+    "zero-dep",
+    "typescript",
+    "nodejs"
+  ],
   "author": "Yuki_akai",
   "homepage": "https://github.com/yukiakai212/logger",
   "engines": {
@@ -54,7 +61,5 @@
     "typescript-eslint": "^8.35.1",
     "vitest": "^3.2.4"
   },
-  "dependencies": {
-    
-  }
+  "dependencies": {}
 }
