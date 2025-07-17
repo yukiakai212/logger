@@ -10,7 +10,7 @@ const levels: Record<LogLevel, number> = {
 };
 
 export class logger {
-  static level: LogLevel = process.env.LOG_LEVEL as any || 'info';
+  static level: LogLevel = (process.env.LOG_LEVEL as any) || 'info';
   private static shouldLog(targetLevel: LogLevel) {
     return levels[targetLevel] <= levels[this.level];
   }

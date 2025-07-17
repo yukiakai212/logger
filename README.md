@@ -142,10 +142,10 @@ MIT © [Yuki](https://github.com/yukiakai212/)
 
 ---
 
-[npm-downloads-image]: https://badgen.net/npm/dm/logger
-[npm-downloads-url]: https://www.npmjs.com/package/logger
-[npm-url]: https://www.npmjs.com/package/logger
-[npm-version-image]: https://badgen.net/npm/v/logger
+[npm-downloads-image]: https://badgen.net/npm/dm/@yukiakai/logger
+[npm-downloads-url]: https://www.npmjs.com/package/@yukiakai/logger
+[npm-url]: https://www.npmjs.com/package/@yukiakai/logger
+[npm-version-image]: https://badgen.net/npm/v/@yukiakai/logger
 [github-build-url]: https://github.com/yukiakai212/logger/actions/workflows/build.yml/badge.svg
 [github-url]: https://github.com/yukiakai212/logger/
 [codecov-image]: https://codecov.io/gh/yukiakai212/logger/branch/main/graph/badge.svg
