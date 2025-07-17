@@ -9,6 +9,9 @@ jobs:
   create-release-pr:
     if: startsWith(github.event.head_commit.message, 'pre-release:')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
