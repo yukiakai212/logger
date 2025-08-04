@@ -43,7 +43,7 @@ describe('Logger.shouldLog', () => {
 
     for (const [loggerLevel, targetLevel, expected] of table) {
       Logger.level = loggerLevel;
-      expect(Logger.shouldLog(targetLevel)).toBe(expected);
+      expect(Logger.shouldLogTest(targetLevel)).toBe(expected);
     }
   });
 });

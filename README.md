@@ -20,6 +20,7 @@ A lightweight **static logger** for Node.js using native `console.log` but with 
 - Support `debug`, `info`, `warn`, `error`, `fatal`, `silent`
 - **Static & global**, no instance needed.
 - Control log level via `process.env.LOG_LEVEL` or code.
+- Filter logs by caller file path via `Logger.path`.
 - No dependencies. Zero overhead.
 
 ---
@@ -42,6 +43,9 @@ import { Logger } from '@yukiakai/logger';
 // Set level once (global, static)
 Logger.level = process.env.LOG_LEVEL as any || 'info';
 
+// Custom filter log path
+Logger.path = './src/';
+
 Logger.info('Server started', { port: 3000 });
 Logger.debug('Debug data', { foo: 123, bar: 456 });
 Logger.warn('Warning', 'some detail');
@@ -55,6 +59,9 @@ const { Logger } = require('@yukiakai/logger');
 
 // Set level once (global, static)
 Logger.level = process.env.LOG_LEVEL || 'info';
+
+// Custom filter log path
+Logger.path = './src/';
 
 Logger.info('Server started', { port: 3000 });
 Logger.debug('Debug data', { foo: 123, bar: 456 });
@@ -111,6 +118,19 @@ Or in code:
 ```ts
 Logger.level = 'warn';
 ```
+
+## 🔧 Log Path
+
+You can configure the logger to only log messages when called from specific files by setting the `Logger.path` option.
+
+Set via code
+
+```ts
+Logger.path = './src/';
+```
+#### Default behavior
+
+If `Logger.path` is not set, the logger will **log from all files under the current working directory (`process.cwd()`)**, excluding any files inside `node_modules/`.
 
 ---
 
