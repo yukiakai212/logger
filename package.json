@@ -1,6 +1,6 @@
 {
   "name": "@yukiakai/logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight static logger for Node.js using native `console.log` but with log levels and `debug`-style control.",
   "type": "module",
   "main": "./dist/index.js",
