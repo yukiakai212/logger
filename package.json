@@ -1,12 +1,12 @@
 {
   "name": "@yukiakai/logger",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A lightweight static logger for Node.js using native `console.log` but with log levels and `debug`-style control.",
   "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "exports": {
-	"types": "./dist/index.d.ts",
+    "types": "./dist/index.d.ts",
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
