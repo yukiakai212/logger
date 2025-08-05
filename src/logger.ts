@@ -17,7 +17,7 @@ const levels: Record<LogLevel, number> = {
 export class Logger {
   static level: LogLevel = (process.env.LOG_LEVEL as any) || 'info';
   static path: string;
-  static time: number;
+  private static time: number;
   private static shouldLog(targetLevel: LogLevel) {
     const file = this.filename();
     if (this.path) {
@@ -31,13 +31,13 @@ export class Logger {
   private static shouldLogTest(targetLevel: LogLevel) {
     return this.shouldLog(targetLevel);
   }
-  private static filename() {
+  private static filename(): string {
     const depth = 4;
-    const e = new Error();
-    const stack = e.stack.split('\n')[depth];
+    const e: Error = new Error();
+    const stack = e.stack?.split('\n')[depth] || '';
     const file = esm(stack) || cjs(stack) || cjsNon(stack);
     if (process.env?.DEBUG === 'vanipath') console.log('debug stack', stack);
-    return file ? (file.startsWith('file') ? fileURLToPath(file) : file) : null;
+    return file ? (file.startsWith('file') ? fileURLToPath(file) : file) : '';
   }
   private static metadata(): string {
     const file = path.basename(this.filename());
