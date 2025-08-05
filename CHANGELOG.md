@@ -1,5 +1,11 @@
 # @yukiakai/logger
 
+## 1.1.0
+
+### Minor Changes
+
+- e66654e: TS type support
+
 ## 1.0.2
 
 ### Patch Changes
