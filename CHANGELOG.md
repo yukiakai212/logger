@@ -1,5 +1,11 @@
 # @yukiakai/logger
 
+## 1.1.1
+
+### Patch Changes
+
+- 7ea01e9: Using Trusted Publisher
+
 ## 1.1.0
 
 ### Minor Changes
