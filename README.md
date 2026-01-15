@@ -14,7 +14,7 @@ A lightweight **static logger** for Node.js using native `console.log` but with 
 
 ---
 
-## 🚀 Features
+## Features
 
 - Uses Node.js **native `console`**, keeps `util.inspect` formatting (colors, depth, etc.)
 - Support `debug`, `info`, `warn`, `error`, `fatal`, `silent`
@@ -25,7 +25,7 @@ A lightweight **static logger** for Node.js using native `console.log` but with 
 
 ---
 
-## 📦 Install
+## Install
 
 ```bash
 npm i @yukiakai/logger
@@ -33,7 +33,7 @@ npm i @yukiakai/logger
 
 ---
 
-## 🔧 Usage
+## Usage
 
 #### ESM (TS)
 
@@ -87,7 +87,7 @@ Logger.error('Something failed', new Error('Oops'));
 
 ---
 
-## 🌈 Why?
+## Why?
 
 - You **don’t want to delete `console.log`** everywhere when done debugging.
 - You **love Node’s `console.log(a, b, c)`** style (no JSON lines, no forced format).
@@ -96,7 +96,7 @@ Logger.error('Something failed', new Error('Oops'));
 
 ---
 
-## 🔧 Log Levels
+## Log Levels
 
 | Level   | Logs           |
 |----------|----------------|
@@ -119,7 +119,7 @@ Or in code:
 Logger.level = 'warn';
 ```
 
-## 🔧 Log Path
+## Log Path
 
 You can configure the logger to only log messages when called from specific files by setting the `Logger.path` option.
 
@@ -134,7 +134,7 @@ If `Logger.path` is not set, the logger will **log from all files under the curr
 
 ---
 
-## 🗂️ API
+## API
 
 | Method | Description |
 |---------|-------------|
@@ -149,14 +149,14 @@ All methods accept `console.log` style arguments:
 
 ---
 
-## 📦 Changelog
+## Changelog
 
 See full release notes in [CHANGELOG.md][changelog-url]
 
 ---
 
 
-## 🛡️ License
+## License
 
 MIT © [Yuki](https://github.com/yukiakai212/)
 
